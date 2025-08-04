@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: cold-email-generator
+    env: python
+    buildCommand: "./setup.sh && pip install -r requirements.txt"
+    startCommand: "streamlit run main.py"
+    plan: free
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false # This means you'll need to set it manually in the Render dashboard
+      - key: VECTORSTORE_PATH
+        value: /var/data/vectorstore
+      - key: PORTFOLIO_PATH
+        value: /app/sample_portfolio.csv
+      - key: PYTHONUNBUFFERED
+        value: true
+      - key: RENDER
+        value: true
