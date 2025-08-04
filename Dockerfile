@@ -23,7 +23,7 @@ COPY . .
 RUN chmod +x setup.sh
 
 # Create directory for vector database
-RUN mkdir -p ${VECTORSTORE_PATH:-/var/data/vectorstore}
+RUN mkdir -p /var/data/vectorstore
 
 # Expose port
 EXPOSE 8501

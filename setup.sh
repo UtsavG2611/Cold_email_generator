@@ -4,18 +4,18 @@
 mkdir -p ~/.streamlit/
 
 # Create credentials file
-echo "\
-[general]\n\
-email = \"your@email.com\"\n\
-" > ~/.streamlit/credentials.toml
+cat > ~/.streamlit/credentials.toml << EOL
+[general]
+email = "your@email.com"
+EOL
 
 # Create config file with proper port configuration for Render
-echo "\
-[server]\n\
-headless = true\n\
-enableCORS = false\n\
-port = ${PORT:-8501}\n\
-" > ~/.streamlit/config.toml
+cat > ~/.streamlit/config.toml << EOL
+[server]
+headless = true
+enableCORS = false
+port = ${PORT:-8501}
+EOL
 
 # Create directory for vector database if it doesn't exist
 mkdir -p ${VECTORSTORE_PATH:-vectorstore2}
