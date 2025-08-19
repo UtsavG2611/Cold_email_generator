@@ -16,7 +16,7 @@ def create_email_generator(llm, portfolio, clean_text):
     
     # Add card-like container for input
     st.markdown("""
-    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+    <div style="background-color: #141414; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
         <h3 style="text-align: center; margin-bottom: 20px;">Enter a job posting URL to generate a cold email</h3>
     </div>
     """, unsafe_allow_html=True)
@@ -56,7 +56,7 @@ def create_email_generator(llm, portfolio, clean_text):
                     
                     # Create a card-like container for each email
                     st.markdown(f"""
-                    <div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                    <div style="background-color: #141414; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
                         <h3 style="text-align: center; color: #1E88E5; margin-bottom: 15px;">Email {i+1}</h3>
                     </div>
                     """, unsafe_allow_html=True)
@@ -75,7 +75,7 @@ def create_github_readme_generator(github_readme_generator):
     
     # Add card-like container for input
     st.markdown("""
-    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+    <div style="background-color: #121212; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
         <h3 style="text-align: center; margin-bottom: 20px;">Enter a GitHub repository URL to generate a README file</h3>
     </div>
     """, unsafe_allow_html=True)
@@ -104,7 +104,7 @@ def create_github_readme_generator(github_readme_generator):
             
             # Create a card-like container for the README
             st.markdown("""
-            <div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+            <div style="background-color: #121212; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
                 <h3 style="text-align: center; color: #1E88E5; margin-bottom: 15px;">README.md</h3>
             </div>
             """, unsafe_allow_html=True)
@@ -148,7 +148,7 @@ def create_selection_page():
         .card {
             border-radius: 10px;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #262626;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             transition: transform 0.3s ease;
